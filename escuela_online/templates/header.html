@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/school-building.png" alt="school-building"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn btn-success" href="{% url 'cursos_list' %}">Lista de Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-info" href="{% url 'crear_curso' %}">Crear Curso</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
