@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Detalle lecciones{% endblock  %}
+
+{% block content %}
+<div class="container">
+    <h1>Detalle del lecciones: {{ leccion.nombre }}</h1>
+    <p>Día de Publicación: {{ leccion.dia_publicacion }}</p>
+    <p>Cantidad de Videos: {{ leccion.cantidad_videos }}</p>
+    <p>Imagen: <img src="{{ leccion.imagen.url }}" alt="{{ lecciones.nombre }}" width="100px"></p>
+    <a href="{% url 'editar_lecciones' leccion.id %}" class="btn btn-info">Editar</a>
+    <a href="{% url 'eliminar_lecciones' leccion.id %}" class="btn btn-danger">Eliminar</a>
+</div>
+{% endblock %}
